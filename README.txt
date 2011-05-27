@@ -1,6 +1,6 @@
 Plain Page - XHTML CSS JS Starter Kit
 -------------------------------------
-Project page: http://code.google.com/p/plainpage
+Project page: https://github.com/alexdesignworks/PlainPage
 License: LICENSE.TXT (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 
 Remember those times when you have to start new project from blank files and think about all tricks you've used on previous projects? Isn't it annoying to dig and copy-paste found solutions in those blank files?
@@ -41,4 +41,4 @@ Credits
 -------
 This project is maintained by Alex Skrypnyk (alex.designworks@gmail.com)
 
-Please feel free to report bugs and create feature requests at http://code.google.com/p/plainpage.
+Please feel free to report bugs and create feature requests at https://github.com/alexdesignworks/PlainPage/issues.
