@@ -1,0 +1,1 @@
+Copy all fon files in this directory.

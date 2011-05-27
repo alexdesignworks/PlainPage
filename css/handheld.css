@@ -1,0 +1,19 @@
+/**
+ * @handheld.css
+ * Handheld styles file.
+ *
+ * This file contains CSS rules used for handheld devices.
+ *
+ * Author: Alex Skrypnyk (alex@alexdesignworks.com)
+ * License: GPL (http://www.opensource.org/licenses/gpl-license.php) 
+ *
+ * Last modified: 15/02/2011
+ * Version:  1.1
+ */
+
+* {
+  background: #fff;
+  color: #000;
+  float: none;     
+  font-size: 80%; 
+}

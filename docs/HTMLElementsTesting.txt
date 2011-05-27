@@ -1,0 +1,158 @@
+Plain Page - XHTML CSS JS Starter Kit
+-------------------------------------
+Project page: http://code.google.com/p/plainpage
+License: LICENSE.TXT (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+
+This file contains the list of all possible variations for layout testing.
+It should be used by designers and themers to test their layouts for styling compatibility.
+
+Author: Alex Skrypnyk (alex.designworks@gmail.com)
+Version: 1.0.2
+Modified: 15/02/2011
+
+Legend:
+- not implemented
++ implemented
+* advanced (optional to implement)
+=> followed by
+> enclosed
+
+
+CONTENT
+=======
+=HEADINGS=
+- generic headings
+- multiline headings
+- sequential headings (h1 => h2, h2 => h3, h1 => h2 => h3) - at least 3 levels
+- content followed headings (h1 => p, h2 => p, h3 => p) - at least 3 levels
+
+=PARAGRAPS=
+- generic paragraphs (at least 3)
+- last paragraph (p:last-child)
+
+=LISTS=
+- ordered list
+- unordered list
+- description list
+- ol>ol
+- ol>ul
+- ul>ol
+- ul>ol
+- ol>ol>ol
+- ol>ol>ul
+- ol>ul>ol
+- ol>ul>ul
+- ul>ul>ul
+- ul>ul>ol
+- ul>ol>ul
+- ul>ol>ol
+- ul:last-child
+- ol:last-child
+
+=LINKS=
+- generic link
+- active link
+- hover link
+- visited link
+
+=TABLES=
+- generic table (5x5)
+- rows hover
+* cells hover
+- table odd/even rows
+- table odd/even rows hover
+- table heading
+- table heading link
+- table heading active link
+- table heading link hover
+- table heading active link hover
+
+
+=MISC=
+- blockqoute
+- blockqoute>blockqoute
+- address
+- code
+- pre
+
+FORMS
+=====
+=TEXTBOX=
+- generic textbox (at least 3)
+- disabled textbox
+- textbox with label (at least 3)
+- textbox with label multiline (at least 3)
+- active textbox
+- compulsory textbox
+- textbox with description
+* textbox with description in popup hint 
+- textbox with error
+- textbox with error message
+- link in message for textbox with error
+
+=TEXTAREA=
+- generic textarea (at least 3)
+- disabled textarea
+- textarea with label (at least 3)
+- textarea with label multiline (at least 3)
+- active textarea
+- compulsory textarea
+- textarea with description
+* textarea with description in popup hint 
+- textarea with error
+- textarea with error message
+- link in message for textarea with error
+- resizable textarea
+* resizable textarea with 100% width
+
+=SELECT=
+- generic select
+- disabled select
+- select with label (at least 3)
+- select with label multiline (at least 3)
+- active select
+- compulsory select
+- select with optgroup
+- multiple select
+- multiple select with optgroup
+- select with description
+* select with description in popup hint 
+- select with error
+- select with error message
+- link in message for select with error
+
+=BUTTONS=
+- generic button (button) (at least 3 in column)
+- button submit (input[type="button"])
+- button clear (input[type="clear"])
+- link as button (a.button)
+- 3 buttons in a row
+- 3 buttons in a row wrapped (multiline wrapping)
+- button description
+* button description in popup hint
+- button with error
+- button with error message
+- link in message for button with error
+
+=FIELDSET=
+- generic fieldset
+- fieldset with legend
+- fieldset with legend collapsible
+- fieldset with legend collapsed
+- basic content (div, p, h1-h6, description) inside of fieldset
+
+=VIEW FILTERS=
+* Drupal view filters 
+
+MESSAGES
+========
+- message
+- alert message
+- notification message
+- status message
+- message>ul
+- message>ol
+- message>a
+- alert message>a
+- notification message>a
+- status message>a

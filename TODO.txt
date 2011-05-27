@@ -1,0 +1,75 @@
+This file contains a shorthand TODO list.
+All bug reports and features request must be send to http://code.google.com/p/plainpage/issues/list
+
+This file should not be treated as official TODO or Features list. It contains an approximate roadmap.
+
+Legend
+------
++ = DONE
+- = TO BE DONE
+o = OMITTED
+
+Features:
+--------
++ CSS is updatable with version (independent). Disclaimer that no code except for styles.css or app.js cannot be changed.
++ Fixed footer
++ Meta tags
+  + Keywords
+	+ Description
+	+ Author	
++ robots.txt
++ Include  jQuery
++ IE 6 PNGfix
++ PNG grids in sources
+- enabling/disabling grids with a button (using special jQuery file).	
++ Typography
+	+ 0.75/150
+  - 0.9/150
++ Code repository (SVN) is hosted on Google code
++ Project issues are hosted in the Google code as well
++ CSS coding is done by standards (Drupal CSS coding standards  http://drupal.org/node/302199 )
++ JS coding is done by standards (Drupal JS coding standards http://drupal.org/node/172169)
+  
+Generator Features:
+------------------
+	•  basic or advanced features selection
+	•  select doctype
+	•  include meta tags 
+		?  custom keywords
+		? custom description
+		? custom author
+	• Meta tags can be set on the page using special widget.
+ 
+	• select layout
+	• select sticky footer
+	• include float
+	• different pages has different layout
+	• include robots file
+	• create info.php
+	• include JavaScript
+		? jQuery
+		?  jQuery UI
+		?  pngFix
+		?  custom name for app.js 
+	•  include styles
+		?  reset.css
+		?  menu.css
+		?  typography.css with a number of desired base font size
+	• assemble all framework styles in one file (write a disclaimer that framework styles will not be updatable if assembled in one file. But if user know the unique ID of settings - they can do it).
+		? custom name for styles.css 
+	• generate more than one file
+		? specify page names (otherwise pages will be named progressively).
+	• generate a number for settings. This number can be used to pre-select values.
+	• Project name
+		? Include in comments
+	• All generated files have a marketing block included.
+
+Website Features:
+-----------------
+	•  generator
+		?  have a list of most recent settings in a block
+		?  have a list of most used settings in a block
+	• feedback and suggestion
+	• standalone examples
+	• documentation with inline examples
+

@@ -1,0 +1,92 @@
+/* $Id: drupal.css, v 1.1 alex@alexdesignworks.com Exp $ */
+
+/**
+ * @drupal.css
+ * Drupal reset CSS file.
+ *
+ * This file contains CSS rules used for reset of some Drupal CSS rules.
+ *
+ * Author: Alex Skrypnyk (alex@alexdesignworks.com)
+ * License: GPL (http://www.opensource.org/licenses/gpl-license.php) 
+ *
+ * Last modified: 10/01/2011
+ * Version:  1.1
+ */
+
+/**
+ * This file is updatable. Do not store any custom rules in this file. Use styles.css instead.
+ *
+ * This file contains comments and html-code snippets. 
+ * Feel free to remove all unnecessary comments when publishing to production environment.
+ */ 
+ 
+/*admin module menu items visibility fix*/
+#block-admin-menu  .menu .expanded>ul {      
+  visibility:visible;  /*child menu is visible*/
+}  
+
+.tabledrag-handle,
+.vertical-tab-button a {
+  border: none;
+}
+  .tabledrag-handle:hover,
+  .vertical-tab-button a:hover{
+    border: none;
+  }
+
+/*menu reset*/
+ul.menu li {
+  margin: 0;
+}
+  ul.menu li.expanded {
+    padding:0;
+  }
+li.leaf {
+  padding:0;
+}
+
+/*links*/
+a.imagecache{  
+  border:none;  
+}
+  a.imagecache:hover{  
+    border:none;  
+  }
+
+/*reset body size if admin panel is placed vertically*/
+body.admin-vertical.admin-expanded  {
+  width: auto;
+}
+
+/*panel admin links*/
+.admin-links ul.links li{
+  
+}
+  .admin-links ul.links li a {
+    white-space: nowrap;
+  }
+  
+/*site manager menu (floating manager menu)*/  
+#floating-manager-menu{
+  font-size: 100%;
+}
+  #floating-manager-menu h2{
+    font-size: 1.2em;
+  }
+  #floating-manager-menu.collapsed .close-button{
+    background-image: url(../img/floating_manager_menu-osx-hud_arrow_down.gif);
+  }  
+  #floating-manager-menu .menu{
+    display: block;
+    visibility: visible;
+  }
+
+/* hide order column on processed multivalued fields*/
+.tabledrag-processed thead.tableHeader-processed tr th:nth-child(2){
+  display: none;
+}
+
+/* reset bottom margin for list items inside of view*/
+.view .item-list ul li{
+  margin-bottom:0;
+}

@@ -1,0 +1,93 @@
+Plain Page - XHTML CSS JS Starter Kit
+-------------------------------------
+Project page: http://code.google.com/p/plainpage
+License: LICENSE.TXT (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+
+CHANGELOG file for Plain Page project 
+
+Version: 1.0.11-alpha, 23/05/2011 
+ - CSS - menu-multicolumn (not dropdown) support added (plainpage.css)
+ - CSS - menu-multicolumn-dropdown level 2 item default line-height removed (plainpage.css)
+ - CSS - menu-multicolumn-dropdown level 3 is applied to .expanded elements only (plainpage.css)
+
+Version: 1.0.10-alpha, 18/03/2011 
+ - CSS - Left margin for ol added to be the same as for ul (typography_075_150.css).
+ - CSS - Reset bottom margin for list items inside of view (drupal-reset.css).
+
+Version: 1.0.9-alpha, 28/02/2011 
+ - CSS - Remove black border around text on buttons in Firefox (plainpage.css).
+ - CSS - Columns assigned clearfix's behavior(plainpage.css).
+ - CSS - Added .plainpage class and HTML example to be palced on pages (plainpage.css).
+
+Version: 1.0.8-alpha, 15/02/2011 
+ - CSS - inline and multi-column menus classes changed (plainpage.css).
+ - CSS - #wrap to #pagewrap change.
+ - CSS - all IE-related files removed. Coditional html tag method used instead.
+ - CSS - drupal.css renamed to drupal-reset.css for better scalability.
+ - CSS - ul left margin fixed.
+ - CSS - external fonts support added. fonts directory created.
+ - HTML - coditional html tag added istead of conditionals styles(blank-fixedfooter.html).
+ - DOCS - css/README.TXT updated to reflect changes.
+ - DOCS - README.TXT updated to reflect changes. 
+ - DOCS - fixed text in draft specification for testing HTML elements (HTMLElementsTesting.txt).
+
+Version: 1.0.7-alpha, 10/12/2010
+ - DESIGN - fixed missing images for test pages.
+ - DOCS - added draft specification for testing HTML elements (HTMLElementsTesting.txt).
+ - DOCS - all readme files updated with a proper heading.
+ 
+Version: 1.0.6-alpha, 8/12/2010
+ - CSS - added class .button (plainpage.css).
+ - CSS - prevent extra padding in Firefox when focused on .button (plainpage.css).
+ - CSS - inline menu items appearance in IE 6 fixed (plainpage.css).
+ - CSS - last paragraph margin removed (typography_075_150.css).
+ - CSS - 100% width removed from html and body (plainpage.css).
+ - JS - IE CSS3 slectors support added (selectivizr.js).
+ - JS/CSS/HTML - IE CSS3 properties support added (PIE.htc,ie.css,blank-fixedfooter.html).
+ - DOCS - added license file (LICENSE.txt).
+ - DESIGN - rearranged dirs structure.
+ - DESIGN - common grids file (BlankGridTemplates.png) replaced with 3 Adobe Fireworks-compatible files.
+ - DESIGN - add wireframes library for Adobe Fireworks.
+ - DESIGN - added resizable browsers PNG.
+
+Version: 1.0.5-alpha, 22/10/2010
+ - CSS - menu classes fixed (plainpage.css).
+ - HTML - Tables in typography file (typography.html) altered to refelct more test cases.
+
+Version: 1.0.4-alpha, 04/10/2010
+ - CSS - min-width and min-height resets added.
+ - CSS - js and no-js classes added
+ - JS - show/hide js/no-js elements if JS allowed.
+
+Version: 1.0.3-alpha, 01/10/2010
+ - CSS - Icons support fixed. Class ".icon" must be assigned to the anchor if icons are required. 
+ 
+Version: 1.0.2-alpha, 29/09/2010
+ - CSS - a.noborder support for underlined links added.
+ - JS - automatic .noborder class assigning.
+
+Version: 1.0.1-alpha, 07/09/2010
+ - IMAGES - favicon.ico added.
+ - CSS - clearfix fixed (plainpage.css).
+
+Version: 1.0-alpha, 06/09/2010 - Initial release
+ - HTML - Layout start file (blank.html) implemented.
+ - HTML - Typography file (typography.html) implemented.
+ - CSS - Framework file (plainpage.css) implemented.
+ - CSS - Typography file (typography_075_150.css) implemented.
+ - CSS - Development file (devel.css) implemented.
+ - CSS - User custome files (styles.css, ie.css, ie6.css) implemented.
+ - CSS - Handheld devices support (handheld.css) implemented.
+ - CSS - Drupal reset file (drupal.css) added. 
+ - JS - jQuery PNGFix plugin added.
+ - JS - jQuery 1.4.2 minified added.
+ - JS - Modernizr script (modernizr.min.js) for HTML 5 support added.
+ - JS - Framework helper functions file (plainpage.js) added.
+ - JS - User custom srcipts file (scripts.js) added.
+ - DESIGN - Blank layered grid templates for design implemented (PNG for Fireworks).
+ - DESIGN - Pre-made background grid templates implemented.
+ - DESIGN - Pre-made background zebra templates implemented.
+ - IMAGES - Spacer image (s.gif) added.
+ - IMAGES - PDF icon (icon_pdf.png) added.
+ - IMAGES - Ajax loader (ajax-loader.gif) added.
+ - TXT - robot.txt added

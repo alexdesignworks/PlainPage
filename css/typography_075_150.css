@@ -1,0 +1,190 @@
+/**
+ * @typography_075_150.css
+ * Typography CSS file.
+ *
+ * This file contains CSS rules used for typography properly aligned to the grid,
+ * according to the font size and line height.
+ *
+ * Font size: 0.75 * 16px = 12px
+ * Line height: 150%
+ *
+ * Author: Alex Skrypnyk (alex@alexdesignworks.com)
+ * License: GPL (http://www.opensource.org/licenses/gpl-license.php) 
+ *
+ * Last modified: 18/03/2011
+ * Version:  1.2
+ */
+
+/**
+ * This file is updatable. Do not store any custom rules in this file. Use styles.css instead.
+ *
+ * This file contains comments and html-code snippets. 
+ * Feel free to remove all unnecessary comments when publishing to production environment.
+ */ 
+ 
+/**
+ * DEFAULT FONT SETTINGS
+ * The font-size percentage is of 16px. (0.75 * 16px = 12px)
+ */  
+html { 
+  font-size:100.01%; 
+}
+body {
+  font-size: 75%;  /*=12px*/
+  /*color: #444;*/ /*#444 looks better than black*/
+  background: #fff;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height:150%;
+}
+/* /DEFAULT FONT SETTINGS */
+
+/* HEADINGS */
+h1,
+h2,
+h3,
+h4, 
+h5,
+h6 {
+  font-weight: normal;    
+}
+h1 {   
+  font-size: 3em;   
+  margin-bottom: 0.5em;
+  line-height: 100%
+}
+h2 {   
+  font-size: 2em;  
+  margin-bottom: 0.75em;
+  line-height: 150%
+}
+h3 {  
+  font-size: 1.5em;  
+  margin-bottom: 1em;
+  line-height: 100%
+}
+h4 {  
+  font-size: 1.2em;  
+  margin-bottom: 1.25em;
+  line-height: 125%;  
+}
+h5 {  
+  font-size: 1em;    
+  margin-bottom: 1.5em;
+  font-weight:bold;
+}
+h6 {  
+  font-size: 1em;  
+  font-style: italic;  
+  font-weight:bold;
+}
+/* /HEADINGS */
+
+/* NORMAL TEXT ELEMENTS: paragraph, lists */
+/*common properties*/
+p,
+ul li,
+ol li {    
+  font-size:  1em;
+}
+p,
+ul,
+ol,
+dl,
+table,
+address {
+  margin: 0 0 1.5em;
+}
+/*Paragraph*/
+p {
+
+}
+  p.last,
+  p:last-child {
+    margin-bottom:0;
+  }
+/*Unordered list*/
+ul {
+  list-style-type: disc;
+  list-style-position: inside;  
+  margin-left: 1.5em;
+}
+  ul  li ul {    
+    margin-bottom: 0;
+  }
+  ul li ol {
+    margin-left: 1.5em;
+    margin-bottom: 0;
+  } 
+/*Ordered list*/
+ol {
+  list-style-position:inside;  
+  margin-left: 1.5em;
+}
+  ol li ol {
+    /*@todo: to be defined*/
+  }  
+  ol li ul {
+    /*@todo: to be defined*/
+  }
+/*Definition list*/
+dl {
+
+}
+  dl dt {
+    font-weight: bold;
+  }
+  dl dd {
+    margin-left: 1.5em  
+  }
+/*Table*/
+table tr th {
+  padding: 0;
+}
+table tr td {
+  padding:0.25em;    
+}
+/* /NORMAL TEXT ELEMENTS */
+
+
+/* MISCELLANEOUS */
+
+/*Anchor*/
+a,
+a:link {  
+  text-decoration: none;  
+}
+a:visited {
+
+}
+a:hover {  
+  text-decoration: underline;  
+}
+a:active,
+a.active {
+  text-decoration: underline;
+} 
+/*Capitalized text*/  
+.capitalized,
+.caps {
+  text-transform: capitalize;
+}
+/*Source code*/
+code,
+.sourcecode {
+  font-family: Courier New, serif;
+}
+abbr,
+acronym { 
+  border-bottom: 1px dotted #666; 
+}
+address,
+em,
+i,
+dfn {
+  font-style: italic;  
+}
+strong,
+b {
+  font-weight: bold;
+}
+/* /MISCELLANEOUS */
