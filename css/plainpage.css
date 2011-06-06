@@ -529,8 +529,8 @@ html[xmlns] .columns {
 /*Common icon class*/
 .icon  {
   padding-left: 18px;
-  background-repeat: no-repeat!important;
-  background-position: left 50%!important;
+  background-repeat: no-repeat;
+  background-position: left 50%;
 }
 .noicons a {
   background: none;  
