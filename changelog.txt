@@ -5,6 +5,9 @@ License: LICENSE.TXT (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 
 CHANGELOG file for Plain Page project 
 
+Version: 1.0.11-alpha, 06/06/2011 
+ - CSS - icons background positioning fixed (plainpage.css)
+ 
 Version: 1.0.11-alpha, 23/05/2011 
  - CSS - menu-multicolumn (not dropdown) support added (plainpage.css)
  - CSS - menu-multicolumn-dropdown level 2 item default line-height removed (plainpage.css)

@@ -5,8 +5,8 @@
  * Author: Alex Skrypnyk (alex@alexdesignworks.com)
  * License: GPL (http://www.opensource.org/licenses/gpl-license.php) 
  *
- * Last modified: 23/05/2011
- * Version:  1.5
+ * Last modified: 06/06/2011
+ * Version:  1.6
  */
 
 /**
@@ -529,8 +529,8 @@ html[xmlns] .columns {
 /*Common icon class*/
 .icon  {
   padding-left: 18px;
-  background-repeat: no-repeat!important;
-  background-position: left 50%!important;
+  background-repeat: no-repeat;
+  background-position: left 50%;
 }
 .noicons a {
   background: none;  
