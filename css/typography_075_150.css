@@ -108,6 +108,9 @@ ul {
   list-style-position: inside;  
   margin-left: 1.5em;
 }
+ul.nobullet{
+  margin-left: 0;
+}
   ul  li ul {    
     margin-bottom: 0;
   }
@@ -119,6 +122,9 @@ ul {
 ol {
   list-style-position:inside;  
   margin-left: 1.5em;
+}
+ol.nobullet{
+  margin-left:0;
 }
   ol li ol {
     /*@todo: to be defined*/

@@ -5,13 +5,18 @@ License: LICENSE.TXT (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 
 CHANGELOG file for Plain Page project 
 
+Version: 1.0.12-alpha, 24/08/2011 
+ - CSS - added w-auto(plainpage.css)
+ - CSS - added support for jQuery UI in inline menus (plainpage.css).
+ - CSS - fixed ul and ol .nobullet paddings (typography_075_150.css).
+
 Version: 1.0.11-alpha, 06/06/2011 
- - CSS - icons background positioning fixed (plainpage.css)
+ - CSS - icons background positioning fixed (plainpage.css).
  
 Version: 1.0.11-alpha, 23/05/2011 
- - CSS - menu-multicolumn (not dropdown) support added (plainpage.css)
- - CSS - menu-multicolumn-dropdown level 2 item default line-height removed (plainpage.css)
- - CSS - menu-multicolumn-dropdown level 3 is applied to .expanded elements only (plainpage.css)
+ - CSS - menu-multicolumn (not dropdown) support added (plainpage.css).
+ - CSS - menu-multicolumn-dropdown level 2 item default line-height removed (plainpage.css).
+ - CSS - menu-multicolumn-dropdown level 3 is applied to .expanded elements only (plainpage.css).
 
 Version: 1.0.10-alpha, 18/03/2011 
  - CSS - Left margin for ol added to be the same as for ul (typography_075_150.css).
