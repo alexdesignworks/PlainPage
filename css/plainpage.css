@@ -47,6 +47,8 @@
  *   - Wrapper and fixed footer
  *   - Menu
  *
+ * + Inline blocks
+ *
  * + Plainpage icon
  */
 
@@ -869,3 +871,33 @@ a.icon[href$='.doc']:after {
     width: 24px;           
   }
 /* /PLAINPAGE LOGO */
+
+/* INLINE BLOCKS */
+
+
+/* /INLINE BLOCKS */
+
+/*
+ * Structure:
+ * ul.inline-blocks>li>div>contet
+ * @see http://blog.grakhov.com/post/99406348/inline-block
+ */
+ul.inline-blocks li {    
+    list-style: none;      
+    display: -moz-inline-stack; /* FF2 */
+    display: inline-block;
+    vertical-align: top;    
+    zoom: 1;
+    *display: inline;`/* IE7 */
+}
+
+/*
+ * Copy this to your custom style file.
+ * _height: 250px; is IE6 hack for min-height
+ *
+  ul.inline-blocks li {
+    width: 200px;
+    min-height: 250px;
+    _height: 250px;
+  }
+*/    

@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- Conditional html tag classes. As seen at http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither -->
+<!--[if lt IE 7 ]> <html xmlns="http://www.w3.org/1999/xhtml" class="ie6" lang="en" xml:lang="en"> <![endif]-->
+<!--[if IE 7 ]> <html xmlns="http://www.w3.org/1999/xhtml" class="ie7" lang="en" xml:lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html xmlns="http://www.w3.org/1999/xhtml" class="ie8" lang="en" xml:lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html xmlns="http://www.w3.org/1999/xhtml" class="ie9" lang="en" xml:lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> <!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- Always force latest IE rendering engine (even in intranet) &amp; Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>Fluid Grid | Test | Plain Page - XHTML CSS Javascript Starter Kit</title>
+  
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
+  <link type="image/png" rel="shortcut icon" href="favicon.ico" />
+  <link type="image/png" rel="apple-touch-icon" href="apple-touch-icon.png" />
+  
+  <link rel="stylesheet" type="text/css" href="css/plainpage.css" />	
+  <link rel="stylesheet" type="text/css" href="css/typography_075_150.css" />	
+  <!-- For the less-enabled mobile browsers like Opera Mini -->
+  <link rel="stylesheet" type="text/css" media="handheld" href="css/handheld.css?v=1" />
+
+  <!-- Element outlining styles. Remove on production. -->
+  <link rel="stylesheet" type="text/css" href="css/devel.css" />	  
+  <!-- /Element outlining styles. Remove on production. -->
+  
+  <link rel="stylesheet" type="text/css" href="css/styles.css?v=1" />
+
+  <!-- All Javascript at the bottom, except for Modernizr which enables HTML5 elements & feature detects. -->
+  <script type="text/javascript"  src="js/modernizr-1.5.min.js"></script>
+  
+  <style type="text/css">
+    ul.inline-blocks li {
+      border: solid 1px #333; /* TEST PURPOSES */
+      
+      width: 200px;
+      min-height: 250px;
+      _height: 250px;           
+    }
+  </style>
+</head>
+<body>
+	<div id="pagewrap">
+    <div>
+      <h1>Normal</h1>
+      <ul class="inline-blocks">
+      	<li>
+      		<div>Item 1</div>
+      	</li>
+      	<li>
+      		<div>Item 2</div>
+      	</li>
+      	<li>
+      		<div>Item 3</div>
+      	</li>
+      	<li>
+      		<div>
+            <div class="f-left ww-50 bg-g">Some left floated conetent</div>
+            <div class="f-left ww-50 bg-b">Some left floated conetent</div>
+            <div class="f-right ww-50 bg-y">Some right floated conetent</div>
+          
+          </div>
+      	</li>
+      	<li>
+      		<div>Item 5</div>
+      	</li>
+      	<li>
+      		<div>Item 6</div>
+      	</li>
+      	<li>
+      		<div>Item 7</div>
+      	</li>
+      	<li>
+      		<div>Item 8</div>
+      	</li>
+      	<li>
+      		<div>Item 9</div>
+      	</li>
+      </ul>
+    </div>
+    <h1>Shifted down</h1>
+    <div>
+      <ul class="inline-blocks">
+      	<li>
+      		<div>Item 1sit amet, consectetur adipiscing elit. Proin quis quam libero, eget dictum erat. Maecenas porta, est ac feugiat consequat, nibh lorem congue nibh, sit amet scelerisque est augue in diam. Quisque id sem elit, ut elementum lacus. Nunc convallis lobortis mi, vel ultricies enim tincidunt non. Etiam feugiat libero et orci ullamcorper a varius odio vulputate. Nullam tincidunt suscipit aliquet. Nunc turpis magna, commodo et imperdiet non, adipiscing at elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas non risus dictum nunc condimentum ultrices sit amet sed nisi. Maecenas mi turpis, adipiscing vitae sagittis ac, lobortis id nibh. Curabitur in placerat felis. Pellentesque fringilla laoreet viverra. Cras sit amet enim nisl, eget hendrerit ipsum. Sed sit amet massa ac est aliquam commodo. Duis non erat eros, molestie suscipit quam. Aenean sit amet mauris sem, sed pulvinar orci.
+              <br />Proin euismod urna quis felis posuere convallis. Fusce mollis, leo sit amet luctus iaculis, arcu elit malesuada libero, at sollicitudin lectus urna id nunc. Nam imperdiet purus vitae risus dictum a aliquet dolor commodo. Nam ultrices magna id nisl luctus vitae vehicula nulla porta. Integer ornare, lectus ut dapibus posuere, magna magna pellentesque ligula, eget condimentum mauris felis eu nunc. Nunc risus odio, placerat eget molestie id, aliquet vel nisi. Pellentesque urna leo, porttitor eget semper in, tristique id enim. Suspendisse turpis enim, ornare vitae interdum ac, vulputate id quam. Praesent at tortor purus, convallis malesuada ipsum.
+              <br />Maecenas ac tortor mi, vel sagittis elit. Morbi feugiat erat eu est pharetra luctus. Suspendisse orci diam, facilisis quis venenatis eget, pellentesque vel leo. Vestibulum euismod aliquet lectus eu consequat. Nullam vel ante felis. Pellentesque arcu sapien, molestie sed consectetur malesuada, tristique ac dolor. Aenean                    
+          </div>
+      	</li>
+      	<li>
+      		<div>Item 2 <img src="img/plainpage_logo_small.png" alt="" /></div>
+      	</li>
+      	<li>
+      		<img src="img/plainpage_logo_small.png" alt="" />
+      	</li>
+      	<li>
+      		<div>Item 4</div>
+      	</li>
+      	<li>
+      		<div>Item 5</div></li>
+      	<li>
+      		<div>Item 6</div>
+      	</li>
+      	<li>
+      		<div>Item 7</div>
+      	</li>
+      	<li>
+      		<div>Item 8</div>
+      	</li>
+      	<li>
+      		<div>Item 9</div>
+      	</li>
+      </ul>
+    </div>
+    
+		<div class="footer_blank"> </div>
+	</div><!-- /#pagewrap -->
+
+	<div id="footer">
+		Footer content
+		<div class="clearfix"></div>
+	</div><!-- /#footer -->
+
+
+  <!-- Javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/scripts.js?v=1"></script>
+
+  <!-- Asynchronous google analytics. Change the UA-XXXXX-X to be your site's ID -->
+  <script type="text/javascript" >
+   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = '//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+  
+  
+  <!-- Custom Javascript code for testing -->
+	<script type="text/javascript">	 
+		$(document).ready(function(){
+
+		});
+	</script>
+
+</body>
+</html>

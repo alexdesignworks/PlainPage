@@ -5,6 +5,11 @@ License: LICENSE.TXT (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 
 CHANGELOG file for Plain Page project 
 
+Version: 1.0.13-alpha, 09/12/2011
+ - CSS - added inline-block implementation for grids (plainpage.css).
+ - CSS - added dimentaions and color values to devel.css.
+ - CSS - added test page for fluid grid (test-fluidgrid.html).
+ 
 Version: 1.0.12-alpha, 24/08/2011 
  - CSS - added w-auto(plainpage.css)
  - CSS - added support for jQuery UI in inline menus (plainpage.css).
