@@ -5,8 +5,8 @@
  * Author: Alex Skrypnyk (alex@alexdesignworks.com)
  * License: GPL (http://www.opensource.org/licenses/gpl-license.php) 
  *
- * Last modified: 06/06/2011
- * Version:  1.6
+ * Last modified: 18/01/2012
+ * Version:  1.7
  */
 
 /**
@@ -806,7 +806,7 @@ a.icon[href$='.doc']:after {
   }    
 /*Multi-column menu*/
 .menu-multicolumn-dropdown {
-  
+  overflow: visible;  /* Since dropdowns are "pop-up" elements, we should allow overflow. */
 }
   /*Level1 item*/
   .menu-multicolumn-dropdown ul li.expanded {

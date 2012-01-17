@@ -5,6 +5,9 @@ License: LICENSE.TXT (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 
 CHANGELOG file for Plain Page project 
 
+Version: 1.0.14-alpha, 18/01/2012
+ - CSS - fixed .menu-multicolumn-dropdown overflow property. (plainpage.css).
+
 Version: 1.0.13-alpha, 09/12/2011
  - CSS - added inline-block implementation for grids (plainpage.css).
  - CSS - added dimentaions and color values to devel.css.
