@@ -1,9 +1,9 @@
 /**
  * @plainpage.css
- * Main framework file. Includes resets and browser fixes. 
+ * Main framework file. Includes resets and browser fixes.
  *
  * Author: Alex Skrypnyk (alex@alexdesignworks.com)
- * License: GPL (http://www.opensource.org/licenses/gpl-license.php) 
+ * License: GPL (http://www.opensource.org/licenses/gpl-license.php)
  *
  * Last modified: 18/01/2012
  * Version:  1.7
@@ -12,7 +12,7 @@
 /**
  * This file is updatable. Do not store any custom rules in this file. Use styles.css instead.
  *
- * This file contains comments and html-code snippets. 
+ * This file contains comments and html-code snippets.
  * Feel free to remove all unnecessary comments when publishing to production environment.
  */
 
@@ -60,89 +60,89 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var,
-b, i, 
+b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, figure, footer, header, 
+article, aside, figure, footer, header,
 hgroup, menu, nav, section, menu,
 time, mark, audio, video {
   background:transparent;
-  border:0;  
+  border:0;
   font-size:100%;
   margin:0;
   padding:0;
-  outline:0;  
-  vertical-align:baseline;  
-}                  
+  outline:0;
+  vertical-align:baseline;
+}
 
 /* GLOBAL HTML FIXES*/
 html, body {
   height:100%;
 }
 
-html { 
+html {
   -webkit-font-smoothing: antialiased; /* maxvoltar.com/archive/-webkit-font-smoothing */
   overflow-y: scroll; /* always force a scrollbar in non-IE */
 }
 
 *:focus {
-  outline: none;         
+  outline: none;
 }
 /* Selections */
-::-moz-selection{ 
-  background: #FF5E99; 
-  color:#fff; 
-  text-shadow: none; 
+::-moz-selection{
+  background: #FF5E99;
+  color:#fff;
+  text-shadow: none;
 }
-::selection { 
-  background:#FF5E99; 
-  color:#fff; 
-  text-shadow: none; 
-} 
+::selection {
+  background:#FF5E99;
+  color:#fff;
+  text-shadow: none;
+}
 /* bicubic resizing for non-native sized IMG: code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
-.ie7 img { 
-  -ms-interpolation-mode: bicubic; 
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
 }
 /*html5*/
-article, 
-aside, 
-figure, 
-footer, 
-header, 
-hgroup, 
-nav, 
-section { 
-  display:block; 
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display:block;
 }
 
-nav ul { 
-  list-style:none; 
+nav ul {
+  list-style:none;
 }
 /* /GLOBAL HTML FIXES*/
 
 /* LINKS */
-a { 
-  margin:0; 
-  padding:0; 
-  font-size:100%; 
-  vertical-align:baseline; 
-  background:transparent; 
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
 }
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
-a:hover, 
-a:active { 
-  outline: none; 
+a:hover,
+a:active {
+  outline: none;
 }
 /*  j.mp/webkit-tap-highlight-color */
-a:link { 
-  -webkit-tap-highlight-color: #FF5E99; 
-} 
+a:link {
+  -webkit-tap-highlight-color: #FF5E99;
+}
 /*Image links*/
-a img, 
-:link img, 
-:visited img {  
-  border:none;  
+a img,
+:link img,
+:visited img {
+  border:none;
 }
   a.noborder,
   a.noborder:hover{
@@ -151,166 +151,166 @@ a img,
 /* /LINKS */
 
 /* HEADINGS */
-/* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
+/* www.aestheticallyloyal.com/public/optimize-legibility/ */
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 { 
-  text-rendering: optimizeLegibility; 
+h6 {
+  text-rendering: optimizeLegibility;
 }
 /* /HEADINGS */
 
 /* LISTS */
-ol, 
-ul, 
-.nobullet{  
-  list-style-image:none;  
-  list-style-position:outside; 
-  list-style-type:none;  
+ol,
+ul,
+.nobullet{
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
 }
-ol { 
-  list-style-type: decimal; 
+ol {
+  list-style-type: decimal;
 }
 /* /LISTS */
 
 /* QUOTES */
-blockquote, q { 
-  quotes:none; 
+blockquote, q {
+  quotes:none;
 }
-q:before, 
-q:after, 
-blockquote:before, 
-blockquote:after   {  
-  content:'';  
+q:before,
+q:after,
+blockquote:before,
+blockquote:after   {
+  content:'';
   content:none;
 }
 /* /QUOTES */
 
 
 /* TABLES */
-table {   
-  border-collapse: collapse; 
-  border-spacing:0; 
+table {
+  border-collapse: collapse;
+  border-spacing:0;
 }
   table th,
-  table td {   
-    vertical-align: top;  
+  table td {
+    vertical-align: top;
   }
-  table th {   
-    font-weight:bold;              
-  }    
-td, 
-td img { 
-  vertical-align:top; 
-} 
+  table th {
+    font-weight:bold;
+  }
+td,
+td img {
+  vertical-align:top;
+}
 /* TABLES */
 
-/* PREFORMATTED AND SPECIAL TEXT */  
-pre { 
-  padding: 1em;  
+/* PREFORMATTED AND SPECIAL TEXT */
+pre {
+  padding: 1em;
   /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
   white-space: pre; /* CSS2 */
   white-space: pre-wrap; /* CSS 2.1 */
   white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
   word-wrap: break-word; /* IE */
-}  
+}
 /* Normalize monospace sizing. en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
-pre, 
-code, 
-kbd, 
-samp { 
-  font-family: monospace, sans-serif; 
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
 }
-hr { 
-  display:block; 
-  height:1px; 
-  border:0; 
-  border-top:1px solid #ccc; 
-  margin:1em 0; 
-  padding:0; 
+hr {
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #ccc;
+  margin:1em 0;
+  padding:0;
 }
-abbr[title], dfn[title] { 
-  border-bottom:1px dotted #000; 
-  cursor:help; 
+abbr[title], dfn[title] {
+  border-bottom:1px dotted #000;
+  cursor:help;
 }
-ins { 
-  background-color:#ff9; 
-  color:#000; 
-  text-decoration:none; 
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
 }
-mark { 
-  background-color:#ff9; 
-  color:#000; 
-  font-style:italic; 
-  font-weight:bold; 
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
 }
-del { 
-  text-decoration: line-through; 
+del {
+  text-decoration: line-through;
 }
-.small { 
-  font-size:85%; 
+.small {
+  font-size:85%;
 }
 .large {
-  font-size:120%; 
+  font-size:120%;
 }
-strong{ 
-  font-weight: bold; 
+strong{
+  font-weight: bold;
 }
-sub {   
-  font-size: smaller; 
-  vertical-align: sub; 
+sub {
+  font-size: smaller;
+  vertical-align: sub;
 }
-sup { 
-  font-size: smaller; 
-  vertical-align: super;   
+sup {
+  font-size: smaller;
+  vertical-align: super;
 }
-/* /PREFORMATTED AND SPECIAL TEXT */  
+/* /PREFORMATTED AND SPECIAL TEXT */
 
 /* FORMS */
-input, 
-select { 
-  vertical-align:middle; 
+input,
+select {
+  vertical-align:middle;
 }
 /* Align checkboxes, radios, text inputs with their label. By: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
-input[type="radio"] { 
-  vertical-align: text-bottom; 
+input[type="radio"] {
+  vertical-align: text-bottom;
 }
-input[type="checkbox"] {   
-  vertical-align: baseline; 
+input[type="checkbox"] {
+  vertical-align: baseline;
 }
-  .ie7 input[type="checkbox"] {   
-    vertical-align: bottom; 
+  .ie7 input[type="checkbox"] {
+    vertical-align: bottom;
   }
-.ie6 input { 
-  vertical-align: text-bottom; 
+.ie6 input {
+  vertical-align: text-bottom;
 }
 
 /* Hand cursor on clickable input elements */
-label, 
-input[type=button], 
-input[type=submit], 
+label,
+input[type=button],
+input[type=submit],
 button,
-.button { 
-  cursor: pointer; 
+.button {
+  cursor: pointer;
 }
 /* Fix for buttons in IE: www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
-button {  
-  width: auto; 
-  overflow: visible; 
+button {
+  width: auto;
+  overflow: visible;
 }
 /* Prevent extra padding in Firefox */
 .button::-moz-focus-inner {
   padding: 0;
   border: 0;
-} 
+}
 /* Remove black border around text on buttons */
 input[type="submit"]::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
 button::-moz-focus-inner{
   border: 0;
-} 
+}
 /* /FORMS */
 
 /**
@@ -318,57 +318,57 @@ button::-moz-focus-inner{
  */
 
 /* PRINT STYLES */
-/* Inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ */ 
+/* Inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ */
 @media print {
-  * { 
-    background: transparent !important; 
-    color: #444 !important; 
-    text-shadow: none; 
+  * {
+    background: transparent !important;
+    color: #444 !important;
+    text-shadow: none;
   }
-  a, 
-  a:visited { 
-    color: #444 !important; 
-    text-decoration: underline; 
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline;
   }
-  a:after { 
-    content: " (" attr(href) ")"; 
-  } 
-  abbr:after { 
-    content: " (" attr(title) ")"; 
-  }  
-  /* Don't show links for images */  
-  .ir a:after { 
-    content: ""; 
-  } 
-  pre, 
+  a:after {
+    content: " (" attr(href) ")";
+  }
+  abbr:after {
+    content: " (" attr(title) ")";
+  }
+  /* Don't show links for images */
+  .ir a:after {
+    content: "";
+  }
+  pre,
   blockquote {
-    border: 1px solid #999; 
-    page-break-inside: avoid; 
-  }  
-  img { 
-    page-break-inside: avoid; 
+    border: 1px solid #999;
+    page-break-inside: avoid;
   }
-  @page { 
-    margin: 0.5cm; 
+  img {
+    page-break-inside: avoid;
   }
-  p, 
-  h2, 
-  h3 { 
-    orphans: 3; 
-    widows: 3; 
+  @page {
+    margin: 0.5cm;
   }
-  h2, 
-  h3{ 
-    page-break-after: avoid; 
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3{
+    page-break-after: avoid;
   }
 }
 /* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome). Check this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) {   
+@media screen and (max-device-width: 480px) {
   /* Prevent iOS, WinMobile from adjusting font size */
-  html { 
-    -webkit-text-size-adjust:none; 
-    -ms-text-size-adjust:none; 
-  } 
+  html {
+    -webkit-text-size-adjust:none;
+    -ms-text-size-adjust:none;
+  }
 }
 
 /**
@@ -378,11 +378,11 @@ button::-moz-focus-inner{
 /* JS-enabled and JS disabled nodes*/
 .js-support {
   display: none;
-} 
+}
 .no-js-support {
-  
-} 
- 
+
+}
+
 /* TABLES */
   .noborders,
   .noborders table,
@@ -397,42 +397,42 @@ button::-moz-focus-inner{
 /* /TABLES */
 
 /* LAYOUT CLASSES */
-.hidden  {  
-  display: none;          
+.hidden  {
+  display: none;
 }
-.invisible { 
-  visibility: hidden; 
+.invisible {
+  visibility: hidden;
 }
 /* Hide only visually, but have it available for screenreaders.  www.webaim.org/techniques/css/invisiblecontent/ */
-.visuallyhidden { 
-  position:absolute !important;    
+.visuallyhidden {
+  position:absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px); 
+  clip: rect(1px, 1px, 1px, 1px);
 }
-.show  {  
-  display: block;   
+.show  {
+  display: block;
 }
-.no-margin   {   
-  margin: 0!important;     
+.no-margin   {
+  margin: 0!important;
 }
 .no-padding   {
-  padding: 0!important;     
+  padding: 0!important;
 }
-.no-bg     {  
-  background: none!important; 
+.no-bg     {
+  background: none!important;
 }
-.no-border  {   
-  border: none!important;   
-} 
+.no-border  {
+  border: none!important;
+}
 .nowrap {
   white-space: nowrap;
 }
 /* for image replacement */
-.ir { 
-  display:block; 
-  text-indent:-999em; 
-  overflow:hidden; 
-  background-repeat: no-repeat; 
+.ir {
+  display:block;
+  text-indent:-999em;
+  overflow:hidden;
+  background-repeat: no-repeat;
 }
 /* clearfix */
 .clearfix:after,
@@ -460,42 +460,42 @@ html[xmlns] .columns {
 
 /* TEXT ALIGN*/
 .a-left     {
-  t-align: left;       
+  t-align: left;
 }
-.a-center   {   
-  text-align: center;     
+.a-center   {
+  text-align: center;
 }
-.a-right {   
-  text-align: right;       
+.a-right {
+  text-align: right;
 }
 /* /TEXT ALIGN*/
 
-/* POSITIONING */    
-.column  {  
-  display: block;  
-  float: left;   
-  overflow: hidden;    
+/* POSITIONING */
+.column  {
+  display: block;
+  float: left;
+  overflow: hidden;
 }
-  .column-last  {  
-    float:right;   
+  .column-last  {
+    float:right;
   }
-.center-auto{  
-  margin: 0 auto;    
+.center-auto{
+  margin: 0 auto;
   width: 100%;
-}  
+}
 /*Floating*/
-.f-left {  
-  float: left;  
+.f-left {
+  float: left;
 }
-.f-right  {  
-  float: right;  
+.f-right  {
+  float: right;
 }
-.f-none {  
-  float: none;  
+.f-none {
+  float: none;
 }
-.clr-both  {  
-  clear:both;  
-  display:block;      
+.clr-both  {
+  clear:both;
+  display:block;
 }
 
 /* Width and height. Left inline to maintain redability.*/
@@ -507,8 +507,8 @@ html[xmlns] .columns {
 .h-25    {  height: 25%;  overflow: hidden;  }
 .h-33    {  height: 33%;  overflow: hidden;  }
 .h-50    {  height: 50%;  overflow: hidden;  }
-.h-75    {  height: 75%;  overflow: hidden;  }  
-.h-100    {  height: 100%;  overflow: hidden;  }  
+.h-75    {  height: 75%;  overflow: hidden;  }
+.h-100    {  height: 100%;  overflow: hidden;  }
 .w-auto { width: auto!important;    }
 .w-25    {  width: 24.99%;  }
 .w-33    {  width: 31.99%;  }
@@ -526,7 +526,7 @@ html[xmlns] .columns {
 .mw-250    {  min-width: 250px;}
 .mw-420    {  min-width: 420px;}
 .mw-500    {  min-width: 500px;}
-/* /POSITIONING */    
+/* /POSITIONING */
 
 /* ICONS */
 /*Common icon class*/
@@ -536,129 +536,38 @@ html[xmlns] .columns {
   background-position: left 50%;
 }
 .noicons a {
-  background: none;  
-  padding: 0;  
+  background: none;
+  padding: 0;
 }
 /*Icons classes. Distinguished by file extension.*/
 a.icon[href$='.pdf'] {
-  background: url(../img/icon_pdf.png) no-repeat left 100%;  
+  background: url(../img/icon_pdf.png) no-repeat left 100%;
   line-height: 28px;
-  padding-left: 20px;  
-  padding-top: 24px;  
+  padding-left: 20px;
+  padding-top: 24px;
 }
 a.icon[href$='.pdf']:after {
   content:" (PDF file)";
 }
 
 a.icon[href$='.zip'] {
-  background: url(../img/icon_zip.png) no-repeat left 100%;  
-  padding-left: 20px;  
-  padding-top: 24px;    
+  background: url(../img/icon_zip.png) no-repeat left 100%;
+  padding-left: 20px;
+  padding-top: 24px;
 }
 a.icon[href$='.zip']:after {
   content:" (ZIP file)";
 }
 
 a.icon[href$='.doc'] {
-  background: url(../img/icon_doc.png) no-repeat left 100%;  
-  padding-left: 20px;  
-  padding-top: 24px;  
+  background: url(../img/icon_doc.png) no-repeat left 100%;
+  padding-left: 20px;
+  padding-top: 24px;
 }
 a.icon[href$='.doc']:after {
   content:" (MS Word file)";
 }
 /* /ICONS */
- 
-/* ROUND CORNERS */
-/* Image-based, non-js*/
-
-/**  
- * Sliding doors
- * Method description:
- * 1. Content inside "roundcorners" container is put into "roundcorners-inner" container
- * 2. 2 divs (one inside of anorther one) are added before content container. 
- *    Left part has a background image of top corner which width is equal to maximum expected width of element. 
- *    Right part has a background image of top corner which width is equal to minimum available width for corner.
- *    Left conrtainer, which contains right container, has a margin equal to width of right corner. 
- *    Right container has a margin equal to negative width of right corner.
- * 3. 2 divs (one inside of anorther one) are added after content container .
- *    Same as for top container.     
- * HTML structure:
- * <div class="some class someotherclass ... roundcorners">
- *   <div class="tl"><div class="tr"></div></div>
- *   <div class="roundcorners-inner">
- *     Content
- *   </div>
- *   <div class="bl"><div class="br"></div></div>
- * </div>
- *  
- * You may want to redefine images in your styles.css
- * 
- * NOTE: You may want to delete this comment on the production site.
- */
-.roundcorners .tl, 
-.roundcorners .bl, 
-.roundcorners .tr, 
-.roundcorners .br {  
-  height: 4px;  
-}
-.roundcorners .tl {  
-  background: url(../img/corners_tl.png) no-repeat top left;  
-  margin-right: 4px;  /*width of top right corner*/
-}  
-.roundcorners .tr {  
-  background: url(../img/corners_tr.png) no-repeat top right;  
-  margin-right: -4px; /*width of top right corner*/  
-}  
-.roundcorners .bl {  
-  background: url(../img/corners_bl.png) no-repeat left bottom; 
-  margin-right: 4px;  /*width of bottom right corner*/
-}  
-.roundcorners .br {  
-  background: url(../img/corners_br.png) no-repeat right bottom;
-  margin-right: -4px; /*width of bottom right corner*/
-}  
-/* /SLIDING DOORS*/
-
-/*CONTOUR-FORM*/
-/**
- * @todo
- * Write method description and HTML Example.
- * 
- * You may want to redefine images in your styles.css
- *
- * NOTE: You may want to delete this comment on the production site.
-*/
-.roundcornerscf .tl, 
-.roundcornerscf .bl, 
-.roundcornerscf .tr, 
-.roundcornerscf .br {    
-}
-.roundcornerscf .tl {  
-  background: url(../img/cornerscf_tl.png) no-repeat top left;  
-}
-.roundcornerscf .tr {  
-  background: url(../img/cornerscf_tr.png) no-repeat top right;  
-}
-.roundcornerscf .bl {  
-  background: url(../img/cornerscf_bl.png) no-repeat left bottom;
-}
-.roundcornerscf .br {  
-  background: url(../img/cornerscf_br.png) no-repeat right bottom;
-}
-/* /COUNTOUR-FORM*/
-
-/*Remove corners and reset corner containers*/
-.nocorners .tl, 
-.nocorners .bl, 
-.nocorners .tr, 
-.nocorners .br {  
-  background: inherit;
-  height: auto;   
-  margin: inherit;
-  padding: inherit;
-}
-/* /ROUND CORNERS */
 
 /**
  * CONTAINER CLASSES
@@ -667,40 +576,40 @@ a.icon[href$='.doc']:after {
 /**
  * Main wrapper. Used for fixed footer
  *
- * Code example: fixedfooter.html 
+ * Code example: fixedfooter.html
  * Footer size must be specified in styles.css
- */ 
+ */
 #pagewrap,
-.h-full {  
+.h-full {
   height:auto !important;
   height:100%;
   min-height:100%;
 }
-  #pagewrap .footer_blank  {  
+  #pagewrap .footer_blank  {
     clear: both;
-    display: block;        
+    display: block;
   }
 /**
  * Menus
- * 
+ *
  *  CSS rules for orgasing different types of menu using unordered lists.
  * The types of menus:
- * - basic 
+ * - basic
  * - inline horizontal
  * - inline horizontal with expandable child elements
  * - inline horizontal with multi-column expandable child elements
- * 
+ *
  * HTML structure:
  * <div class="menu menu-inline menu-multicolumn-dropdown|menu-dropdown">
  *   <ul class="menu">
- *     <li class="expanded"><a href="#" class="menu-header"><span>Level 1 expandable link</span></a>      
+ *     <li class="expanded"><a href="#" class="menu-header"><span>Level 1 expandable link</span></a>
  *       <ul class="menu">
  *         <li><a href="#"><span>Level 2 link</span></a></li>
  *         <li><a href="#"><span>Level 2 link</span></a></li>
- *       </ul>      
+ *       </ul>
  *     </li>
  *   </ul>
- * </div>  
+ * </div>
  */
 
 /* BASIC MENU */
@@ -709,25 +618,25 @@ a.icon[href$='.doc']:after {
   list-style-type: none;
   list-style-position: outside;
   list-style-image:none;
-  margin:0;  
+  margin:0;
 }
-  .menu li {    
+  .menu li {
     font-size:100%;
     list-style-type: none;
-    list-style-image:none;        
-    margin:0;    
-  }    
+    list-style-image:none;
+    margin:0;
+  }
     .menu li.leaf {
       list-style-type: none;
-      list-style-image:none;        
-    }    
+      list-style-image:none;
+    }
     .menu li ul {
       margin:0;
-    }  
-      .menu li a {  
-        display: block;          
-        /*border-right:solid 1px #243C5E;*/  /*vertical delimiters between items. Uncomment if required.*/            
-      }  
+    }
+      .menu li a {
+        display: block;
+        /*border-right:solid 1px #243C5E;*/  /*vertical delimiters between items. Uncomment if required.*/
+      }
 .menu-inline li a {
   display: inline;
 }
@@ -739,101 +648,130 @@ a.icon[href$='.doc']:after {
 
 /* INLINE MENU */
 .menu-inline li {
-  float:left;  
+  float:left;
 }
   * html .menu-inline li {
     width: 0;
-    white-space: nowrap;			
+    white-space: nowrap;
   }
- 
+
   .menu-inline li a {
     text-align: center;
     width: 100%;  /*makes link width the same as parent li*/
   }
 
-/*Center float positioned menu elements*/  
-.menu-inline-centered  {  
-   float:left;   
+/*Center float positioned menu elements*/
+.menu-inline-centered  {
+   float:left;
    overflow:hidden;
    position:relative;
-   width:100%;     
+   width:100%;
 }
-  .menu-inline-centered ul {    
-    float:left;    
+  .menu-inline-centered ul {
+    float:left;
     left:50%;
     position:relative;
     text-align:center;
-  }    
-    .menu-inline-centered ul li {    
+  }
+    .menu-inline-centered ul li {
       float:left;
       margin-right:10px;
       position:relative;
       right:50%;
     }
       .menu-inline-centered ul li a  {
-        text-align: center;        
+        text-align: center;
         /*width: 100%;  /*makes link width the same as parent li*/
       }
+
+/* PHONE */
+@media (max-width: 480px) {
+  input[type="text"],
+  input[type="password"]{
+    width:  90%;
+  }
+  input[type="submit"],
+  input[type="reset"],
+  button,
+  .button {
+    padding: 10px;
+    width: 100%;
+  }
+
+  /* Large emails fix */
+  a[href*="@"] {
+    font-size: 0.7em;
+    font-size: 4vw;
+  }
+  .menu-inline-centered ul{
+    float: none;
+  }
+    .menu-inline-centered ul li{
+      float: none;
+      margin: 0;
+    }
+}
+
 /* /INLINE MENU */
 
 /*MULTI-LEVEL MENU*/
-.menu-dropdown .expanded>ul,        
-.menu-multicolumn-dropdown .expanded>ul {        
+.menu-dropdown .expanded>ul,
+.menu-multicolumn-dropdown .expanded>ul {
   position: absolute;  /*Width of submenu must be independant from parent item*/
   visibility:hidden;  /*child menu is hidden*/
   z-index: 9990; /*leave some indexes for lightboxes*/
 }
   .menu-dropdown  .expanded:hover>ul,
-  .menu-multicolumn-dropdown  .expanded:hover>ul {      
+  .menu-multicolumn-dropdown  .expanded:hover>ul {
     visibility:visible;  /*child menu is visible*/
-  }  
+  }
     .menu-dropdown  .expanded:hover>ul .expanded ul ,
-    .menu-multicolumn-dropdown .expanded:hover>ul .expanded ul {            
+    .menu-multicolumn-dropdown .expanded:hover>ul .expanded ul {
       display: block;
-      position: relative;  /*starting from level 2, all items have relative position*/  
-      visibility:visible;  /*child menu is visible*/      
+      position: relative;  /*starting from level 2, all items have relative position*/
+      visibility:visible;  /*child menu is visible*/
     }
-  
+
 .menu-multicolumn .expanded>ul li,
 .menu-dropdown  .expanded ul li,
-.menu-multicolumn-dropdown .expanded ul li {  
+.menu-multicolumn-dropdown .expanded ul li {
   float: none;  /*overrides parent inline rules*/
-}      
+}
   .menu-dropdown  .expanded ul li a,
   .menu-multicolumn-dropdown  .expanded ul li a {
     font-size: inherit;
-    text-align: left;    
-  }    
+    text-align: left;
+  }
 /*Multi-column menu*/
 .menu-multicolumn-dropdown {
   overflow: visible;  /* Since dropdowns are "pop-up" elements, we should allow overflow. */
 }
   /*Level1 item*/
   .menu-multicolumn-dropdown ul li.expanded {
-  
+
   }
   /*Level1 link*/
   .menu-multicolumn-dropdown ul li.expanded a {
-    
+
   }
 
   /*Level2 container*/
-  .menu-multicolumn-dropdown ul li.expanded ul {    
+  .menu-multicolumn-dropdown ul li.expanded ul {
     display: none;
-    position: absolute;    
+    position: absolute;
     z-index: 99;
   }
-  
-    /*Level2 container visible on hover*/  
+
+    /*Level2 container visible on hover*/
     .menu-multicolumn-dropdown ul li.expanded:hover ul {
-      display: block;  
+      display: block;
     }
     /*Level2 item*/
     .menu-multicolumn ul li.expanded,
     .menu-multicolumn-dropdown ul li.expanded ul li.expanded {
       display: block;
       float: left;
-      position: relative;            
+      position: relative;
     }
       /*Level2 item hover*/
       .menu-multicolumn-dropdown ul li.expanded ul li.expanded:hover {
@@ -841,7 +779,7 @@ a.icon[href$='.doc']:after {
       }
       /*Level2 link*/
       .menu-multicolumn-dropdown ul li.expanded ul li a {
-        
+
       }
       /*Level3 container*/
       .menu-multicolumn ul li.expanded ul,
@@ -852,23 +790,23 @@ a.icon[href$='.doc']:after {
         .menu-multicolumn ul li.expanded ul li,
         .menu-multicolumn-dropdown ul li.expanded ul li.expanded ul li {
           display: block;
-          float: none;          
+          float: none;
         }
-/* /MULTI-LEVEL MENU*/        
+/* /MULTI-LEVEL MENU*/
 
 /* PLAINPAGE LOGO */
-/* 
-  <div class="plainpage"><a href="http://code.google.com/p/plainpage/" title="Build with help of PlainPage - XHTML CSS JS Starter Kit"></a></div> 
+/*
+  <div class="plainpage"><a href="http://code.google.com/p/plainpage/" title="Build with help of PlainPage - XHTML CSS JS Starter Kit"></a></div>
 */
-.plainpage {    
-  position: absolute;  
-  right: 0;  
+.plainpage {
+  position: absolute;
+  right: 0;
 }
   .plainpage  a{
     background: url(../img/pp_icon.png) no-repeat left top;
     height: 24px;
     display: block;
-    width: 24px;           
+    width: 24px;
   }
 /* /PLAINPAGE LOGO */
 
@@ -882,11 +820,11 @@ a.icon[href$='.doc']:after {
  * .inline-blocks>li>div>contet
  * @see http://blog.grakhov.com/post/99406348/inline-block
  */
-.inline-blocks li {    
-    list-style: none;      
+.inline-blocks li {
+    list-style: none;
     display: -moz-inline-stack; /* FF2 */
     display: inline-block;
-    vertical-align: top;    
+    vertical-align: top;
     zoom: 1;
     *display: inline;`/* IE7 */
 }
