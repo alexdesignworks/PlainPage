@@ -1,0 +1,60 @@
+
+
+// @mixin grid-fluid($columnWidth, $gutterWidth) {
+// @param $columnCount
+//  Qty of columns. Defaults to 12.
+// @param $unitRatio
+//   Column to gutter ratio. All grids are ususally buil around grid units. Defaults to 3.
+// @param $width
+//   Grid width.
+// @return
+//   CSS markup for fluid or fixed grid.
+@mixin grid($columnCount:12, $unitRatio: 3, $width: 100%) {
+  $gridType: '.row-fluid';
+  @if unit($width) != '%' {
+    $gridType: '.row';
+  }
+
+  $gutterWidth: $width/($columnCount*$unitRatio + $columnCount - 1);
+  //$gutterWidth: 2.08333333%;
+  $columnWidth: $unitRatio*$gutterWidth;
+  #{$gridType} {
+    width: 100%;
+    @include clearfix;
+    [class*="span"] {
+      display: block;
+      width: 100%;
+      @include box-sizing(border-box);
+      float: left;
+      margin-left: $gutterWidth;
+      //*margin-left: $gutterWidth - (.5 / $gridRowWidth * 100px * 1%);
+    }
+    // Reset left margin for the first item without offset.
+    [class*="span"]:not([class*="offset"]):first-child {
+      margin-left: 0;
+    }
+
+    // Hack for IE8 asit does notwork with attribute selector 'contains' (*).
+    >*:first-child {
+      margin-left: 0\9;
+    }
+
+    // Generate spans
+    $i: $columnCount;
+    @while $i > 0 {
+      .span#{$i} {
+        width: ($columnWidth * $i) + ($gutterWidth * ($i - 1));
+      }
+      .offset#{$i}{
+        margin-left: ($columnWidth * $i) + ($gutterWidth * $i);
+      }
+      div + div[class*="offset#{$i}"]{
+        margin-left: ($columnWidth * $i) + ($gutterWidth * ($i+1));
+      }
+      div[class*="offset#{$i}"]:first-child{
+        margin-left: ($columnWidth * $i) + ($gutterWidth * $i);
+      }
+      $i: $i - 1;
+    }
+  }
+}

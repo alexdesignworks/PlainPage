@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gid Tests</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS just for the tests page -->
+    <link href="../css/plainpage.css" rel="stylesheet">
+    <link href="css-tests.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+  <div id="pagewrap">
+    <h1>Fluid grid - Normal</h1>
+    <div class="row-fluid">
+      <div class="span1">1</div>
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+      <div class="span1">10</div>
+      <div class="span1">11</div>
+      <div class="span1">12</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span1">1</div>
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+      <div class="span1">10</div>
+      <div class="span1">11</div>
+      <div class="span1">12</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span1">1</div>
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+      <div class="span1">10</div>
+      <div class="span1">11</div>
+      <div class="span1">12</div>
+    </div>
+
+    <h1>Fluid grid - Missing cells</h1>
+    <h2>Expected: All other cells should be moved left</h2>
+    <div class="row-fluid">
+      <div class="span1">1</div>
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+      <div class="span1">10</div>
+      <div class="span1">11</div>
+      <div class="span1">12</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span1">1</div>
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+      <div class="span1">10</div>
+      <div class="span1">11</div>
+      <div class="span1">12</div>
+    </div>
+
+    <h1>Fluid Grid - all spans</h1>
+    <div class="row-fluid">
+      <div class="span1">1</div>
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+      <div class="span1">10</div>
+      <div class="span1">11</div>
+      <div class="span1">12</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">1</div>
+      <div class="span2">2</div>
+      <div class="span2">3</div>
+      <div class="span2">4</div>
+      <div class="span2">5</div>
+      <div class="span2">6</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span3">1</div>
+      <div class="span3">2</div>
+      <div class="span3">3</div>
+      <div class="span3">4</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span4">1</div>
+      <div class="span4">2</div>
+      <div class="span4">3</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span5">1</div>
+      <div class="span5">2</div>
+      <div class="span2">3</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span6">1</div>
+      <div class="span6">2</div>
+    </div>
+
+    <h1>Fluid grid - offset test</h1>
+    <h2>Expected: columns with offset should account for gutter spaces properly.</h2>
+    <div class="row-fluid">
+      <div class="span1 offset1">2</div>
+      <div class="span1">3</div>
+      <div class="span1 offset1">4</div>
+      <div class="span1">5</div>
+      <div class="span1 offset1">6</div>
+      <div class="span1 offset1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1 offset1">4</div>
+      <div class="span1">5</div>
+      <div class="span1 offset1">6</div>
+      <div class="span1 offset1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+    </div>
+    <h1>Fluid grid - one more offset test</h1>
+    <div class="row-fluid">
+      <div class="span4 offset4">4 offset 4</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span4">4</div>
+      <div class="span4 offset4">4 offset 4</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span3 offset3">3 offset 3</div>
+      <div class="span3 offset3">3 offset 3</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span8 offset4">8 offset 4</div>
+    </div>
+
+    <h1>Fluid grid - nested tests</h1>
+    <h2>Excpected: cells are not the same width as parent.</h2>
+    <div class="row-fluid">
+      <div class="span4 offset4">4 offset 4</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="row-fluid">
+          <div class="span1">1</div>
+          <div class="span1">2</div>
+          <div class="span1">3</div>
+          <div class="span1">4</div>
+          <div class="span1">5</div>
+          <div class="span1">6</div>
+          <div class="span1">7</div>
+          <div class="span1">8</div>
+          <div class="span1">9</div>
+          <div class="span1">10</div>
+          <div class="span1">11</div>
+          <div class="span1">12</div>
+        </div>
+        <div class="row-fluid">
+          <div class="span4 offset4">4 offset 4</div>
+        </div>
+        <div class="row-fluid">
+          <div class="span4">4</div>
+          <div class="span4 offset4">4 offset 4</div>
+        </div>
+        <div class="row-fluid">
+          <div class="span3 offset3">3 offset 3</div>
+          <div class="span3 offset3">3 offset 3</div>
+        </div>
+        <div class="row-fluid">
+          <div class="span8 offset4">8 offset 4</div>
+        </div>
+      </div>
+      <div class="span4 offset4">4 offset 4</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span3 offset3">3 offset 3</div>
+      <div class="span3 offset3">3 offset 3</div>
+    </div>
+    <div class="row-fluid">
+      <div class="span8 offset4">8 offset 4</div>
+    </div>
+
+
+    <h1>Fixed grid - Normal</h1>
+    <div class="row">
+      <div class="span1">1</div>
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+      <div class="span1">10</div>
+      <div class="span1">11</div>
+      <div class="span1">12</div>
+    </div>
+    <div class="row">
+      <div class="span1">1</div>
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+      <div class="span1">10</div>
+      <div class="span1">11</div>
+      <div class="span1">12</div>
+    </div>
+    <div class="row">
+      <div class="span1">1</div>
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+      <div class="span1">10</div>
+      <div class="span1">11</div>
+      <div class="span1">12</div>
+    </div>
+
+    <h1>Fixed grid - Missing cells</h1>
+    <h2>Expected: All other cells should be moved left</h2>
+    <div class="row">
+      <div class="span1">1</div>
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+    </div>
+    <div class="row">
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+      <div class="span1">10</div>
+      <div class="span1">11</div>
+      <div class="span1">12</div>
+    </div>
+    <div class="row">
+      <div class="span1">1</div>
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+      <div class="span1">10</div>
+      <div class="span1">11</div>
+      <div class="span1">12</div>
+    </div>
+
+    <h1>Fixed grid - all spans</h1>
+    <div class="row">
+      <div class="span1">1</div>
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1">4</div>
+      <div class="span1">5</div>
+      <div class="span1">6</div>
+      <div class="span1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+      <div class="span1">10</div>
+      <div class="span1">11</div>
+      <div class="span1">12</div>
+    </div>
+    <div class="row">
+      <div class="span2">1</div>
+      <div class="span2">2</div>
+      <div class="span2">3</div>
+      <div class="span2">4</div>
+      <div class="span2">5</div>
+      <div class="span2">6</div>
+    </div>
+    <div class="row">
+      <div class="span3">1</div>
+      <div class="span3">2</div>
+      <div class="span3">3</div>
+      <div class="span3">4</div>
+    </div>
+    <div class="row">
+      <div class="span4">1</div>
+      <div class="span4">2</div>
+      <div class="span4">3</div>
+    </div>
+    <div class="row">
+      <div class="span5">1</div>
+      <div class="span5">2</div>
+      <div class="span2">3</div>
+    </div>
+    <div class="row">
+      <div class="span6">1</div>
+      <div class="span6">2</div>
+    </div>
+
+    <h1>Fixed grid - offset test</h1>
+    <h2>Expected: columns with offset should account for gutter spaces properly.</h2>
+    <div class="row">
+      <div class="span1 offset1">2</div>
+      <div class="span1">3</div>
+      <div class="span1 offset1">4</div>
+      <div class="span1">5</div>
+      <div class="span1 offset1">6</div>
+      <div class="span1 offset1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+    </div>
+    <div class="row">
+      <div class="span1">2</div>
+      <div class="span1">3</div>
+      <div class="span1 offset1">4</div>
+      <div class="span1">5</div>
+      <div class="span1 offset1">6</div>
+      <div class="span1 offset1">7</div>
+      <div class="span1">8</div>
+      <div class="span1">9</div>
+    </div>
+    <h1>Fixed grid - one more offset test</h1>
+    <div class="row">
+      <div class="span4 offset4">4 offset 4</div>
+    </div>
+    <div class="row">
+      <div class="span4">4</div>
+      <div class="span4 offset4">4 offset 4</div>
+    </div>
+    <div class="row">
+      <div class="span3 offset3">3 offset 3</div>
+      <div class="span3 offset3">3 offset 3</div>
+    </div>
+    <div class="row">
+      <div class="span8 offset4">8 offset 4</div>
+    </div>
+
+
+    <h1>Fixed grid - nested tests</h1>
+    <div class="row">
+      <div class="span4 offset4">4 offset 4</div>
+    </div>
+    <div class="row">
+      <div class="span4">
+        <div class="row">
+          <div class="span1 offset1">1 offset 1</div>
+          <div class="span1">4</div>
+        </div>
+        <div class="row">
+          <div class="span1">4</div>
+        </div>
+        <div class="row">
+          <div class="span3 offset1">3 offset 1</div>
+        </div>
+        <div class="row">
+          <div class="span4">4</div>
+        </div>
+      </div>
+      <div class="span4 offset4">4 offset 4</div>
+    </div>
+    <div class="row">
+      <div class="span3 offset3">3 offset 3</div>
+      <div class="span3 offset3">3 offset 3</div>
+    </div>
+    <div class="row">
+      <div class="span8 offset4">8 offset 4</div>
+    </div>
+  </div> <!--/#pagewrap-->
+  </body>
+</html>

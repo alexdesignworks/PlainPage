@@ -1,0 +1,53 @@
+@import "plainpage.base";
+/*!*
+ * Main PlainPage framework file.
+ *
+ * Author: #{$plainpageAuthor}
+ * Last modified: #{$plainpageLastModified}
+ * Version: #{$plainpageVersion}
+ */
+
+
+//Contains main PalinPage partials and Compas cherry-picked partials.
+// Compass components.
+@import "compass/reset/utilities";
+@import "compass/css3/inline-block";
+@import "compass/css3/box-sizing";
+@import "compass/utilities/general/clearfix";
+@import "compass/utilities/general/min";
+@import "compass/typography/text/_replacement";
+
+// PlainPage native components.
+@import "layout";
+@import "tabs";
+@import "grid";
+@import "text";
+
+
+/* Global reset */
+@include global-reset;
+
+/* Utilities */
+
+@include center-auto;
+@include columns;
+
+.clearfix{
+  @include clearfix;
+}
+
+.inline-block,
+.inline-blocks li {
+  @include inline-block;
+}
+
+.inline-blocks-justified{
+  @include inline-blocks-justified($bodyFontSize);
+}
+
+@include quick-width;
+@include quick-width-px;
+@include quick-width-em;
+
+@include grid;
+@include grid($width:940px);

@@ -1,0 +1,204 @@
+/**
+ * Menus
+ *
+ *  CSS rules for orgasing different types of menu using unordered lists.
+ * The types of menus:
+ * - basic
+ * - inline horizontal
+ * - inline horizontal with expandable child elements
+ * - inline horizontal with multi-column expandable child elements
+ *
+ * HTML structure:
+ * <div class="menu menu-inline menu-multicolumn-dropdown|menu-dropdown">
+ *   <ul class="menu">
+ *     <li class="expanded"><a href="#" class="menu-header"><span>Level 1 expandable link</span></a>
+ *       <ul class="menu">
+ *         <li><a href="#"><span>Level 2 link</span></a></li>
+ *         <li><a href="#"><span>Level 2 link</span></a></li>
+ *       </ul>
+ *     </li>
+ *   </ul>
+ * </div>
+ */
+
+/* BASIC MENU */
+.menu,
+.menu ul {
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image:none;
+  margin:0;
+}
+.menu li {
+  font-size:100%;
+  list-style-type: none;
+  list-style-image:none;
+  margin:0;
+}
+.menu li.leaf {
+  list-style-type: none;
+  list-style-image:none;
+}
+.menu li ul {
+  margin:0;
+}
+.menu li a {
+  display: block;
+/*border-right:solid 1px #243C5E;*/  /*vertical delimiters between items. Uncomment if required.*/
+}
+.menu-inline li a {
+  display: inline;
+}
+/* Support for jQuery UI */
+.menu-inline li a.ui-button {
+  display: block;
+}
+/* /BASIC MENU */
+
+/* INLINE MENU */
+.menu-inline li {
+  float:left;
+}
+* html .menu-inline li {
+  width: 0;
+  white-space: nowrap;
+}
+
+.menu-inline li a {
+  text-align: center;
+  width: 100%;  /*makes link width the same as parent li*/
+}
+
+/*Center float positioned menu elements*/
+.menu-inline-centered  {
+  float:left;
+  overflow:hidden;
+  position:relative;
+  width:100%;
+}
+.menu-inline-centered ul {
+  float:left;
+  left:50%;
+  position:relative;
+  text-align:center;
+}
+.menu-inline-centered ul li {
+  float:left;
+  margin-right:10px;
+  position:relative;
+  right:50%;
+}
+.menu-inline-centered ul li a  {
+  text-align: center;
+/*width: 100%;  /*makes link width the same as parent li*/
+}
+
+/* PHONE */
+@media (max-width: 480px) {
+  input[type="text"],
+  input[type="password"]{
+    width:  90%;
+  }
+  input[type="submit"],
+  input[type="reset"],
+  button,
+  .button {
+    padding: 10px;
+    width: 100%;
+  }
+
+/* Large emails fix */
+  a[href*="@"] {
+    font-size: 0.7em;
+    font-size: 4vw;
+  }
+  .menu-inline-centered ul{
+    float: none;
+  }
+  .menu-inline-centered ul li{
+    float: none;
+    margin: 0;
+  }
+}
+
+/* /INLINE MENU */
+
+/*MULTI-LEVEL MENU*/
+.menu-dropdown .expanded>ul,
+.menu-multicolumn-dropdown .expanded>ul {
+  position: absolute;  /*Width of submenu must be independant from parent item*/
+  visibility:hidden;  /*child menu is hidden*/
+  z-index: 9990; /*leave some indexes for lightboxes*/
+}
+.menu-dropdown  .expanded:hover>ul,
+.menu-multicolumn-dropdown  .expanded:hover>ul {
+  visibility:visible;  /*child menu is visible*/
+}
+.menu-dropdown  .expanded:hover>ul .expanded ul ,
+.menu-multicolumn-dropdown .expanded:hover>ul .expanded ul {
+  display: block;
+  position: relative;  /*starting from level 2, all items have relative position*/
+  visibility:visible;  /*child menu is visible*/
+}
+
+.menu-multicolumn .expanded>ul li,
+.menu-dropdown  .expanded ul li,
+.menu-multicolumn-dropdown .expanded ul li {
+  float: none;  /*overrides parent inline rules*/
+}
+.menu-dropdown  .expanded ul li a,
+.menu-multicolumn-dropdown  .expanded ul li a {
+  font-size: inherit;
+  text-align: left;
+}
+/*Multi-column menu*/
+.menu-multicolumn-dropdown {
+  overflow: visible;  /* Since dropdowns are "pop-up" elements, we should allow overflow. */
+}
+/*Level1 item*/
+.menu-multicolumn-dropdown ul li.expanded {
+
+}
+/*Level1 link*/
+.menu-multicolumn-dropdown ul li.expanded a {
+
+}
+
+/*Level2 container*/
+.menu-multicolumn-dropdown ul li.expanded ul {
+  display: none;
+  position: absolute;
+  z-index: 99;
+}
+
+/*Level2 container visible on hover*/
+.menu-multicolumn-dropdown ul li.expanded:hover ul {
+  display: block;
+}
+/*Level2 item*/
+.menu-multicolumn ul li.expanded,
+.menu-multicolumn-dropdown ul li.expanded ul li.expanded {
+  display: block;
+  float: left;
+  position: relative;
+}
+/*Level2 item hover*/
+.menu-multicolumn-dropdown ul li.expanded ul li.expanded:hover {
+  background: none!important;
+}
+/*Level2 link*/
+.menu-multicolumn-dropdown ul li.expanded ul li a {
+
+}
+/*Level3 container*/
+.menu-multicolumn ul li.expanded ul,
+.menu-multicolumn-dropdown ul li.expanded ul li.expanded ul {
+  position: relative;
+}
+/*Level3 item*/
+.menu-multicolumn ul li.expanded ul li,
+.menu-multicolumn-dropdown ul li.expanded ul li.expanded ul li {
+  display: block;
+  float: none;
+}
+/* /MULTI-LEVEL MENU*/

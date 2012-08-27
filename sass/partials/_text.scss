@@ -1,0 +1,4 @@
+// PlainPage text partial.
+.hide-text{
+  @include hide-text(not-left);
+}
