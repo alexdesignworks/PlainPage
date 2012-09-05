@@ -1,18 +1,16 @@
-
-
-// @mixin grid-fluid($columnWidth, $gutterWidth) {
+// @mixin grid($columnCount:12, $unitRatio: 3, $width: 100%) {
 // @param $columnCount
 //  Qty of columns. Defaults to 12.
 // @param $unitRatio
-//   Column to gutter ratio. All grids are ususally buil around grid units. Defaults to 3.
+//   Column to gutter ratio. All grids are ususally build around grid units. Defaults to 3.
 // @param $width
-//   Grid width.
+//   Grid width. If specified in %, grid automatically becomes fluid.
 // @return
 //   CSS markup for fluid or fixed grid.
-@mixin grid($columnCount:12, $unitRatio: 3, $width: 100%) {
-  $gridType: '.row-fluid';
+@mixin grid($columnCount:12, $unitRatio: 3, $width: 100%, $rowName:'row') {
+  $gridType: '.'+$rowName+'-fluid';
   @if unit($width) != '%' {
-    $gridType: '.row';
+    $gridType: '.'+$rowName;
   }
 
   $gutterWidth: $width/($columnCount*$unitRatio + $columnCount - 1);

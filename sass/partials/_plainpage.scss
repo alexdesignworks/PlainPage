@@ -18,14 +18,19 @@
 @import "compass/typography/text/_replacement";
 
 // PlainPage native components.
-@import "layout";
-@import "tabs";
-@import "grid";
-@import "text";
+@import "partials/layout";
+@import "partials/tabs";
+@import "partials/grid";
+@import "partials/text";
 
 
 /* Global reset */
 @include global-reset;
+
+*{
+  @include box-sizing(border-box);
+}
+
 
 /* Utilities */
 
