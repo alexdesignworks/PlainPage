@@ -7,6 +7,10 @@ Remember those times when you have to start new project from blank files and thi
 
 Plain Page provides you with as set of proven best XHTML, CSS and JS practices in web-development.
 
+ATTENTION!
+PlainPage is moving to SASS and will not be updated until move is complete.
+
+
 Maintainers and Contributors
 ----------------------------
 Your web-dev ninja trick is not here? Your are more than welcome to submit feature requests.
