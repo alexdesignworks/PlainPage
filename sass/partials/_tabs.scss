@@ -1,0 +1,42 @@
+// Simple tabs implementation
+@mixin tabs(){
+  .tabs {
+    .#{$tabHeaderClass} {
+      margin: 0;
+      padding: 0;
+      li{
+        list-style: none;
+        vertical-align: top;
+        @include inline-block;
+        &.active{
+          background: $tabsTabBgColor;
+        }
+        a {
+          padding: 0 1em;
+          color: $tabsTabFontColor;
+        }
+      }
+    }
+  }
+}
+
+// JS code for tabs.
+//  // Tabs
+//  var headerClass = 'header';
+//  $('.tabs').each(function(){
+//            var tabs = $(this);
+//  // Headers to tabs
+//  var tabsWrapper = $('<ul></ul>').addClass(headerClass);
+//  tabs.find('.'+headerClass).detach().each(function(){
+//                                     tabsWrapper.append($('<li><a href="#">'+$(this).text()+'</a></li>'));
+//    });
+//  tabs.prepend(tabsWrapper);
+//  // Bind click event and activate first tab.
+//  tabs.find('.'+headerClass+' >*').live('click',function(){
+//                                  var $this = $(this);
+//  var idx = $this.parent().children().index($this);
+//  $this.parent().children().not($this).removeClass('active').end().eq(idx).addClass('active');
+//  $this.parent().siblings().not(':eq('+idx+')').addClass('hidden').end().eq(idx).removeClass('hidden');
+//    }).eq(0).trigger('click');
+//
+//  });

@@ -1,0 +1,189 @@
+// Plainpage layout styles.
+
+// Inline blocks justified.
+// @see http://css-live.ru/articles-css/ravnomernoe-vyravnivanie-blokov-po-shirine.html
+@mixin inline-blocks-justified($fontSize: 14px){
+  text-align: justify;
+  line-height: 0;
+  font-size: 1px; // 1px for Opera
+  // IE6-7 fix
+  text-justify: newspaper;
+  zoom:1;
+  // Use last line.
+  text-align-last: justify;
+
+  &:after {
+    width: 100%;
+    height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    @include inline-block();
+  }
+  >* {
+    // Restore line height.
+    line-height: normal;
+    font-size: $fontSize;
+    // Fix bottom padding for Opera.
+    vertical-align: top;
+    @include inline-block();
+  }
+}
+
+
+// Quick columns
+@mixin columns{
+  .columns {
+    @include clearfix;
+    .column {
+      display: block;
+      float: left;
+      overflow: hidden;
+    }
+    .column:last-child,
+    .column-last {
+      float: right;
+    }
+  }
+}
+
+@mixin center-auto{
+  .center-auto {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+// Generate quick dimentions.
+@mixin quick-width($start: 0, $finish: 100, $step: 5){
+  .w-auto {
+    width: auto;
+  }
+  .mw-reset {
+    min-width: 0!important;
+  }
+  @include quick-increment("width", "w", $start, $finish, $step);
+  @include quick-increment("min-width", "mw", $start, $finish, $step);
+}
+@mixin quick-width-em($start: 0, $finish: 20, $step: 1){
+  @include quick-increment("width", "w", $start, $finish, $step, "em");
+  @include quick-increment("min-width", "mw", 0, 20, 1, "em");
+}
+@mixin quick-width-px($start: 0, $finish: 1000, $step: 20){
+  @include quick-increment("width", "w", $start, $finish, $step, "px");
+  @include quick-increment("min-width", "mw", $start, $finish, $step, "px");
+}
+@mixin quick-heigh($start: 0, $finish: 100, $step: 5) {
+  .h-auto {
+    height: auto;
+  }
+  .mh-reset {
+    min-height: 0!important;
+  }
+  @include quick-increment("height", "h", $start, $finish, $step);
+  @include quick-increment("min-height", "mh", $start, $finish, $step);
+}
+@mixin quick-width-em($start: 0, $finish: 20, $step: 1){
+  @include quick-increment("height", "h", $start, $finish, $step, "em");
+  @include quick-increment("min-height", "mh", 0, 20, 1, "em");
+}
+@mixin quick-width-px($start: 0, $finish: 1000, $step: 20){
+  @include quick-increment("height", "w", $start, $finish, $step, "px");
+  @include quick-increment("min-height", "mh", $start, $finish, $step, "px");
+}
+
+@mixin quick-increment($property, $property_prefix, $start: 0, $finish: 100, $step: 5, $suffix: "%"){
+  $class_suffix: $suffix;
+  @if $suffix == "%" {
+    $class_suffix:"";
+  }
+  $i: $finish;
+  @while  $i> $start {
+    .#{$property_prefix}-#{$i}#{$class_suffix}{
+      @if $property == "min-width" {
+        @include min-width(unquote($i+$suffix));
+      }
+      @elseif $property == "min-height" {
+        @include min-height(unquote($i+$suffix));
+      }
+      @else {
+        #{$property}: unquote($i+$suffix);
+      }
+    }
+    $i: $i - $step;
+  }
+}
+
+
+@mixin visibility{
+  .hidden {
+    display: none;
+  }
+  .invisible {
+    visibility: hidden;
+  }
+  /* Hide only visually, but have it available for screenreaders.  www.webaim.org/techniques/css/invisiblecontent/ */
+  .visuallyhidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  .show {
+    display: block;
+  }
+
+}
+
+@mixin nos{
+  .no-margin {
+    margin: 0 !important;
+  }
+  .no-padding {
+    padding: 0 !important;
+  }
+  .no-bg {
+    background: none !important;
+  }
+  .no-border {
+    border: none !important;
+  }
+  .nowrap {
+    white-space: nowrap;
+  }
+}
+
+@mixin text-align{
+  .a-left {
+    t-align: left;
+  }
+  .a-center {
+    text-align: center;
+  }
+  .a-right {
+    text-align: right;
+  }
+}
+
+
+.overflown{
+  overflow: visible!important;
+}
+
+//@TODO: REFACTOR THIS
+// @see compass/layout/sticky footer
+#pagewrap,
+.h-full {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+#pagewrap .footer_blank {
+  clear: both;
+  display: block;
+}
+
+
+
+
+

@@ -17,6 +17,18 @@ Your web-dev ninja trick is not here? Your are more than welcome to submit featu
 
 You can also contribute to this project as co-maintainer. Express your interest by emailing to alex.designworks@gmail.com.
 
+Why this and how this is different from Compass or Twitter Bootstrap?
+---------------------------------------------------------------------
+Very good question indeed!
+The main idea of this project is to Kick-off the development, but with minimum legacy code.
+Unlike Twitter Bootstrap, you do not need to include all styles and scripts into your project. Instead,
+you cherry-pick only the parts you need through mixins (thanks SASS!) and use them in your project.
+Styles within plainpage.scss (and plainpage.css) file have already been cherry-picked from huge Compass framework
+with some additions.
+All partials organized in the ay that they can be used outside of plainpage.scss in your own files.
+
+This approach is very helpful when designing modules or applications that will be used as a part of other systems. In other words, this is "pre-made mix for bricks rather then bricks themselves".
+
 Features
 --------
 
@@ -40,6 +52,10 @@ DESIGN - Fireworks PNG wireframes for quick prototyping.
 DOCS - Strong CSS, JS and XHTML formatting standards.
 DOCS - HTML element testing description.
 
+
+Requirements
+------------
+Installed Ruby with Compass if you need to rebuild PlainPage itself.
 
 Credits
 -------

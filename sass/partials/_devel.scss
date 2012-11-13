@@ -1,0 +1,61 @@
+/**
+ * GRIDS AND ZEBRAS
+ */
+
+/* LINE HEIGHT: 18px (1.5em, body-font-size: 12px =16*0.75em  */
+/* 3 row */
+.zebra18 {
+  background: url(../design/grids/Zebra18.png) repeat scroll center -2px;
+}
+.zebra18-cf {
+  background: blue url(../design/grids/Zebra18_cf_white.png) repeat scroll center -2px;
+}
+.grid18_3a {
+  background: url(../design/grids/Block_18px_R3x18_C14x65.png) repeat scroll center -2px;
+}
+.grid18_3b {
+  background: url(../design/grids/Block_18px_R3x18_C14x53.png) repeat scroll center -2px;
+}
+
+/* 4 row */
+.grid18_4a {
+  background: url(../design/grids/Block_18px_R4x18_C14x65.png) repeat scroll center -2px;
+}
+.grid18_4b {
+  background: url(../design/grids/Block_18px_R4x18_C14x53.png) repeat scroll center -2px;
+}
+
+/* LINE HEIGHT: 20px (1.5em, body-font-size: 12px =16*0.75em */
+
+/* 3 row */
+.zebra20 {
+  background: url(../design/grids/Zebra20.png) repeat scroll center -2px;
+}
+.grid20_3a {
+  background: url(../design/grids/Block_20px_R3x20_C12x60.png) repeat scroll center -2px;
+}
+/* 4 row */
+.grid20_4a {
+  background: url(../design/grids/Block_20px_R4x20_C12x60.png) repeat scroll center -2px;
+}
+
+/* Width 0 - 900px, increment - 5px */
+.ww-0{width:0}.ww-5{width:5px}.ww-10{width:10px}.ww-15{width:15px}.ww-20{width:20px}.ww-25{width:25px}.ww-30{width:30px}.ww-35{width:35px}.ww-40{width:40px}.ww-45{width:45px}.ww-50{width:50px}.ww-55{width:55px}.ww-60{width:60px}.ww-65{width:65px}.ww-70{width:70px}.ww-75{width:75px}.ww-80{width:80px}.ww-85{width:85px}.ww-90{width:90px}.ww-95{width:95px}.ww-100{width:100px}.ww-105{width:105px}.ww-110{width:110px}.ww-115{width:115px}.ww-120{width:120px}.ww-125{width:125px}.ww-130{width:130px}.ww-135{width:135px}.ww-140{width:140px}.ww-145{width:145px}.ww-150{width:150px}.ww-155{width:155px}.ww-160{width:160px}.ww-165{width:165px}.ww-170{width:170px}.ww-175{width:175px}.ww-180{width:180px}.ww-185{width:185px}.ww-190{width:190px}.ww-195{width:195px}.ww-200{width:200px}.ww-205{width:205px}.ww-210{width:210px}.ww-215{width:215px}.ww-220{width:220px}.ww-225{width:225px}.ww-230{width:230px}.ww-235{width:235px}.ww-240{width:240px}.ww-245{width:245px}.ww-250{width:250px}.ww-255{width:255px}.ww-260{width:260px}.ww-265{width:265px}.ww-270{width:270px}.ww-275{width:275px}.ww-280{width:280px}.ww-285{width:285px}.ww-290{width:290px}.ww-295{width:295px}.ww-300{width:300px}.ww-305{width:305px}.ww-310{width:310px}.ww-315{width:315px}.ww-320{width:320px}.ww-325{width:325px}.ww-330{width:330px}.ww-335{width:335px}.ww-340{width:340px}.ww-345{width:345px}.ww-350{width:350px}.ww-355{width:355px}.ww-360{width:360px}.ww-365{width:365px}.ww-370{width:370px}.ww-375{width:375px}.ww-380{width:380px}.ww-385{width:385px}.ww-390{width:390px}.ww-395{width:395px}.ww-400{width:400px}.ww-405{width:405px}.ww-410{width:410px}.ww-415{width:415px}.ww-420{width:420px}.ww-425{width:425px}.ww-430{width:430px}.ww-435{width:435px}.ww-440{width:440px}.ww-445{width:445px}.ww-450{width:450px}.ww-455{width:455px}.ww-460{width:460px}.ww-465{width:465px}.ww-470{width:470px}.ww-475{width:475px}.ww-480{width:480px}.ww-485{width:485px}.ww-490{width:490px}.ww-495{width:495px}.ww-500{width:500px}.ww-505{width:505px}.ww-510{width:510px}.ww-515{width:515px}.ww-520{width:520px}.ww-525{width:525px}.ww-530{width:530px}.ww-535{width:535px}.ww-540{width:540px}.ww-545{width:545px}.ww-550{width:550px}.ww-555{width:555px}.ww-560{width:560px}.ww-565{width:565px}.ww-570{width:570px}.ww-575{width:575px}.ww-580{width:580px}.ww-585{width:585px}.ww-590{width:590px}.ww-595{width:595px}.ww-600{width:600px}.ww-605{width:605px}.ww-610{width:610px}.ww-615{width:615px}.ww-620{width:620px}.ww-625{width:625px}.ww-630{width:630px}.ww-635{width:635px}.ww-640{width:640px}.ww-645{width:645px}.ww-650{width:650px}.ww-655{width:655px}.ww-660{width:660px}.ww-665{width:665px}.ww-670{width:670px}.ww-675{width:675px}.ww-680{width:680px}.ww-685{width:685px}.ww-690{width:690px}.ww-695{width:695px}.ww-700{width:700px}.ww-705{width:705px}.ww-710{width:710px}.ww-715{width:715px}.ww-720{width:720px}.ww-725{width:725px}.ww-730{width:730px}.ww-735{width:735px}.ww-740{width:740px}.ww-745{width:745px}.ww-750{width:750px}.ww-755{width:755px}.ww-760{width:760px}.ww-765{width:765px}.ww-770{width:770px}.ww-775{width:775px}.ww-780{width:780px}.ww-785{width:785px}.ww-790{width:790px}.ww-795{width:795px}.ww-800{width:800px}.ww-805{width:805px}.ww-810{width:810px}.ww-815{width:815px}.ww-820{width:820px}.ww-825{width:825px}.ww-830{width:830px}.ww-835{width:835px}.ww-840{width:840px}.ww-845{width:845px}.ww-850{width:850px}.ww-855{width:855px}.ww-860{width:860px}.ww-865{width:865px}.ww-870{width:870px}.ww-875{width:875px}.ww-880{width:880px}.ww-885{width:885px}.ww-890{width:890px}.ww-895{width:895px}.ww-900{width:900px}
+
+/* Height 0 - 900px, increment - 5px */
+.hh-0{height:0}.hh-5{height:5px}.hh-10{height:10px}.hh-15{height:15px}.hh-20{height:20px}.hh-25{height:25px}.hh-30{height:30px}.hh-35{height:35px}.hh-40{height:40px}.hh-45{height:45px}.hh-50{height:50px}.hh-55{height:55px}.hh-60{height:60px}.hh-65{height:65px}.hh-70{height:70px}.hh-75{height:75px}.hh-80{height:80px}.hh-85{height:85px}.hh-90{height:90px}.hh-95{height:95px}.hh-100{height:100px}.hh-105{height:105px}.hh-110{height:110px}.hh-115{height:115px}.hh-120{height:120px}.hh-125{height:125px}.hh-130{height:130px}.hh-135{height:135px}.hh-140{height:140px}.hh-145{height:145px}.hh-150{height:150px}.hh-155{height:155px}.hh-160{height:160px}.hh-165{height:165px}.hh-170{height:170px}.hh-175{height:175px}.hh-180{height:180px}.hh-185{height:185px}.hh-190{height:190px}.hh-195{height:195px}.hh-200{height:200px}.hh-205{height:205px}.hh-210{height:210px}.hh-215{height:215px}.hh-220{height:220px}.hh-225{height:225px}.hh-230{height:230px}.hh-235{height:235px}.hh-240{height:240px}.hh-245{height:245px}.hh-250{height:250px}.hh-255{height:255px}.hh-260{height:260px}.hh-265{height:265px}.hh-270{height:270px}.hh-275{height:275px}.hh-280{height:280px}.hh-285{height:285px}.hh-290{height:290px}.hh-295{height:295px}.hh-300{height:300px}.hh-305{height:305px}.hh-310{height:310px}.hh-315{height:315px}.hh-320{height:320px}.hh-325{height:325px}.hh-330{height:330px}.hh-335{height:335px}.hh-340{height:340px}.hh-345{height:345px}.hh-350{height:350px}.hh-355{height:355px}.hh-360{height:360px}.hh-365{height:365px}.hh-370{height:370px}.hh-375{height:375px}.hh-380{height:380px}.hh-385{height:385px}.hh-390{height:390px}.hh-395{height:395px}.hh-400{height:400px}.hh-405{height:405px}.hh-410{height:410px}.hh-415{height:415px}.hh-420{height:420px}.hh-425{height:425px}.hh-430{height:430px}.hh-435{height:435px}.hh-440{height:440px}.hh-445{height:445px}.hh-450{height:450px}.hh-455{height:455px}.hh-460{height:460px}.hh-465{height:465px}.hh-470{height:470px}.hh-475{height:475px}.hh-480{height:480px}.hh-485{height:485px}.hh-490{height:490px}.hh-495{height:495px}.hh-500{height:500px}.hh-505{height:505px}.hh-510{height:510px}.hh-515{height:515px}.hh-520{height:520px}.hh-525{height:525px}.hh-530{height:530px}.hh-535{height:535px}.hh-540{height:540px}.hh-545{height:545px}.hh-550{height:550px}.hh-555{height:555px}.hh-560{height:560px}.hh-565{height:565px}.hh-570{height:570px}.hh-575{height:575px}.hh-580{height:580px}.hh-585{height:585px}.hh-590{height:590px}.hh-595{height:595px}.hh-600{height:600px}.hh-605{height:605px}.hh-610{height:610px}.hh-615{height:615px}.hh-620{height:620px}.hh-625{height:625px}.hh-630{height:630px}.hh-635{height:635px}.hh-640{height:640px}.hh-645{height:645px}.hh-650{height:650px}.hh-655{height:655px}.hh-660{height:660px}.hh-665{height:665px}.hh-670{height:670px}.hh-675{height:675px}.hh-680{height:680px}.hh-685{height:685px}.hh-690{height:690px}.hh-695{height:695px}.hh-700{height:700px}.hh-705{height:705px}.hh-710{height:710px}.hh-715{height:715px}.hh-720{height:720px}.hh-725{height:725px}.hh-730{height:730px}.hh-735{height:735px}.hh-740{height:740px}.hh-745{height:745px}.hh-750{height:750px}.hh-755{height:755px}.hh-760{height:760px}.hh-765{height:765px}.hh-770{height:770px}.hh-775{height:775px}.hh-780{height:780px}.hh-785{height:785px}.hh-790{height:790px}.hh-795{height:795px}.hh-800{height:800px}.hh-805{height:805px}.hh-810{height:810px}.hh-815{height:815px}.hh-820{height:820px}.hh-825{height:825px}.hh-830{height:830px}.hh-835{height:835px}.hh-840{height:840px}.hh-845{height:845px}.hh-850{height:850px}.hh-855{height:855px}.hh-860{height:860px}.hh-865{height:865px}.hh-870{height:870px}.hh-875{height:875px}.hh-880{height:880px}.hh-885{height:885px}.hh-890{height:890px}.hh-895{height:895px}.hh-900{height:900px}
+
+/* Colors */
+.bg-r{background-color:#f00}
+.bg-g{background-color:#0f0}
+.bg-b{background-color:#00f}
+.bg-c{background-color:#0ff}
+.bg-m{background-color:#f0f}
+.bg-y{background-color:#ff0}
+.bg-k{background-color:#000}
+.bg-w{background-color:#fff}
+
+
+@mixin border-dotted($color:#999, $width:1px){
+  border: dotted $width $color;
+}
