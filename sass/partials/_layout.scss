@@ -183,6 +183,16 @@
   display: block;
 }
 
+/* /INLINE BLOCKS */
+
+/*
+ * Structure:
+ * .inline-blocks>li>div>contet
+ * @see http://blog.grakhov.com/post/99406348/inline-block
+ */
+.inline-blocks li {
+  @include inline-block();
+}
 
 
 
