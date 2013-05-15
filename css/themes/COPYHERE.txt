@@ -1,4 +1,0 @@
-Copy all jQuery themes in this directory.
-
-For example,
-/css/themes/lightness-ui/<theme_files>
