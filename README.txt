@@ -1,3 +1,8 @@
+This was used before Bootstrap was born.
+
+This project is now abandoned.
+
+
 Plain Page - XHTML CSS JS Starter Kit
 -------------------------------------
 Project page: https://github.com/alexdesignworks/PlainPage
